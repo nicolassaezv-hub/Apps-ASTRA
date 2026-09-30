@@ -39,7 +39,8 @@ La seccion Gestion va sobre:
 
 Y la seccion Inteligencia se enfoca en:
 
-    
+    Utilidad, predicciones por movimientos u acciones de empresa,adaptacion al mercado local y externo, ahorro, presupuesto y parametros para exportacion
+
 
 # Investigacion 
 
@@ -67,4 +68,15 @@ La base conceptual es:
 - Consultas mediante IA	
 - Alertas
 
+### Estetica en modalidad APP
+
+La APP entrega una introduccion de lo que hace para la PyME, acuerdo de usuario y registra al usuario con correo, contraseña y numero de telefono 
+**Por ahora solo mensajes via Correo y Whatsapp**
+
+Hay un Dashboard dedicado a la data de empresa, en la primera interaccion se aclaran los pasos:
+Se pide que ingresen los datos de presupuesto, venta e ingresos
+**OBLIGATORIO QUE ESTEN LOS TRES**
+El formato de los datos esta limitado a CSV y Hoja de calculo (el archivo .xlsx ya sea de Google o de Office)
+
+Con los datos ingresados 
 # Historial de avance
