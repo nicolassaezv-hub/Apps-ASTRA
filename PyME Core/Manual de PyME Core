@@ -11,7 +11,10 @@ Esta implementacion en su formato original propone bajo una seguida de pasos los
       En formato CSV o por menu de usuario hecho con codigo Python. 
       Comprende toda la fuente de presupuesto, produccion e ingreso.
 
-**Para casos sin encriptacion de datos de clientes se hara automaticamente para brindar seguridad en la clientela**
+**Para casos sin encriptacion de datos
+-SHA-256
+-CIFRADOS DE datos
+se hara automaticamente para brindar seguridad en la clientela**
 
 - Ajustes Graficos: 
 
@@ -80,9 +83,17 @@ El formato de los datos esta limitado a CSV y Hoja de calculo (el archivo .xlsx 
 
 Con los datos ingresados se activa la seccion de Analisis Actual, se ofrecera por opcion del usuario una tabla que señale primero si hay data faltante y luego basado en la data el display sera del rendimiento actual, la comparativa del presupuesto mensual, anual y promedio con el ingreso. Los clientes mas frecuentes, metodos de pago preferidos, productos mas vendidos, mes de concentracion de mayor ventas.
 
+Por cada indicio hay una referencia directa al material original
 Al final de este display se dara un boton de Evaluacion Diagnostica (Regional, Nacional e Internacional) como tres bloques distintos que sean asi
 
-| Titulo 1 | Titulo 2 | Titulo 3 |
+| Regional | Nacional | Internacional |
 | --- | --- | --- |
-| EWS | EEE | 
+| CARACTERISTICAS | USOS | LIMITES |
+
+Explican condiciones, una casilla para cada seccion y una casilla en Negrita destacada para explicar el uso de datos bajo un contexto externo (para mercado nacional e internacional) señalando con un pequeño display de Condiciones de Uso estadistico para generar predicciones y un boton final para la Evaluacion Diagnostica de las selecciones del usuario
+
+Esto abre paso a la tercera seccion desplegable del Dashboard de Evaluacion diagnostica. En esta se referencia la situacion de la PyME contrastado dentro de los mercados seleccionados, ofreciendo contextualmente graficos comparativos
+
+
 # Historial de avance
+
