@@ -88,7 +88,9 @@ Al final de este display se dara un boton de Evaluacion Diagnostica (Regional, N
 
 | Regional | Nacional | Internacional |
 | --- | --- | --- |
-| CARACTERISTICAS | USOS | LIMITES |
+| CARACTERISTICAS | CARACTERISTICAS | CARACTERISTICAS |
+|USOS | USOS | USOS |
+|LIMITES | LIMITES | LIMITES |
 
 Explican condiciones, una casilla para cada seccion y una casilla en Negrita destacada para explicar el uso de datos bajo un contexto externo (para mercado nacional e internacional) señalando con un pequeño display de Condiciones de Uso estadistico para generar predicciones y un boton final para la Evaluacion Diagnostica de las selecciones del usuario
 
