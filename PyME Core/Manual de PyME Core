@@ -78,5 +78,11 @@ Se pide que ingresen los datos de presupuesto, venta e ingresos
 **OBLIGATORIO QUE ESTEN LOS TRES**
 El formato de los datos esta limitado a CSV y Hoja de calculo (el archivo .xlsx ya sea de Google o de Office)
 
-Con los datos ingresados 
+Con los datos ingresados se activa la seccion de Analisis Actual, se ofrecera por opcion del usuario una tabla que señale primero si hay data faltante y luego basado en la data el display sera del rendimiento actual, la comparativa del presupuesto mensual, anual y promedio con el ingreso. Los clientes mas frecuentes, metodos de pago preferidos, productos mas vendidos, mes de concentracion de mayor ventas.
+
+Al final de este display se dara un boton de Evaluacion Diagnostica (Regional, Nacional e Internacional) como tres bloques distintos que sean asi
+
+| Titulo 1 | Titulo 2 | Titulo 3 |
+| --- | --- | --- |
+| EWS | EEE | 
 # Historial de avance
