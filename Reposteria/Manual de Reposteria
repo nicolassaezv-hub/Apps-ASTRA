@@ -1,10 +1,19 @@
 # Manual de Reposteria
 
+La App de reposteria comprende la funcion de creacion de recetas a partir de los ingredientes y materiales que dispone, estos al ser usados en recetas se quitan del inventario principal. De manera que la interaccion entre la App y el usuario sea activa
+
 # Informacion general
 
 # Investigacion
 
 # Detales a incluir
+
+En Prototipo debe solamente centrarse en crear recetas basado en el inventario del usuario, nada mas
+Hay detalles que aun deben ser evaluados e implementaciones entre ellas:
+- Timers
+- Calendario
+- In App Browser
+- Algoritmo Predictivo para Recomendaciones
 
 # Parametros a incluir en la APP (SaaS)
 

@@ -32,24 +32,32 @@ se hara automaticamente para brindar seguridad en la clientela**
 
 Prioriza tres estados Operacion, Gestion e Inteligencia. En termino mas simples
 
-La seccion de Operacion trata con:
+La etapa de Operacion trata con:
 
     Venta, compra, stocking, presupuesto y registro de compra
 
-La seccion Gestion va sobre:
+La etapa Gestion va sobre:
 
     Productos destacados, cambios de proveedor, patrones en clientes, estancamientos
 
-Y la seccion Inteligencia se enfoca en:
+Y la etapa Inteligencia se enfoca en:
 
     Utilidad, predicciones por movimientos u acciones de empresa,adaptacion al mercado local y externo, ahorro, presupuesto y parametros para exportacion
 
 
 # Investigacion 
 
-
+Actualmente las PyMES de Chile evidencian una falta en digitalizacion de las empresas.
 
 # Detales a incluir
+
+Hay detalles que discutir sobre el prototipo, mucho sobre las preferencias del usuario tambien recabe en que esta no sea una "app de un uso mensual" sino que tambien integran las siguientes modalidades:
+
++ Calendarizacion
+Un metodo para entregarle al usuario una marca de dias de trabajo y horarios personalizados + un sistema proactivo, al final de cada jornada la app enviara una notificacion para ingresar la data del dia. Basicamente facilitar la registracion tipica de Excel u otros metodos a un registro sencillo hecha por aquellos usuarios, estos seran enviadas a la administracion/jefe en administracion para recabar los datos y confirmar el ingreso automatizado.
+
+- Oportunidad de Exportacion:
+Bajo la condicion de completarse las 3 etapas se abre una seccion extra para aquellos usuarios que quieran verificar y dar veracidad decisiva sobre la exportacion de sus productos. Permite seleccionar los productos y exponerlos en un mapa interactivo dando indices de puntos criticos de venta (bajo la vision de mercado regional/nacional). En el caso de ser internacional se debera primero filtrar manualmente los productos o elegir por casilla todos y luego se debe seleccionar el pais para luego entrar a una fase de evaluacion e investigacion intensiva.
 
 # Parametros a incluir en la APP (SaaS)
 
