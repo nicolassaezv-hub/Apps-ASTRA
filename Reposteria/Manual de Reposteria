@@ -11,10 +11,30 @@ La App de reposteria comprende la funcion de creacion de recetas a partir de los
 En Prototipo debe solamente centrarse en crear recetas basado en el inventario del usuario, nada mas
 Hay detalles que aun deben ser evaluados e implementaciones entre ellas:
 - Timers
-- Calendario
+
+        Dentro de cada receta se da una seccion para aplicar cronometros por cada instruccion.
+        Debe estar en vacio y rellenado por el usuario en caso que no haya registro de los cronometros de cada instruccion
+
++ Calendario
+
+        El sistema de calendario apunta a dejar recordatorios sincronizados con Calendario IOS/Android
+
 - In App Browser
-- Algoritmo Predictivo para Recomendaciones
+
+        Aquellos usuarios interesados en saber las fuentes de las recetas tendra un apartado dentro de la descripcion de cada receta
+        Ej:
+        Receta para brownies
+        Fuentes: cocinaartesanal.com
+        Cada link debe ser posible abrirlos con una funcion In-App Browser
+
++ Algoritmo Predictivo para Recomendaciones
+
+        Esta idea se implementa como un propio feed de recomendaciones de recetas, con apartados como:
+        Te intereso "Nombre de Receta" 
+        Ya que te gusto "Receta 1" te recomendamos "Receta 2"
+        Estas corto de tiempo? Haz estas recetas! / Tienes 5 minutos? Aprovecha y prepara!
 
 # Parametros a incluir en la APP (SaaS)
+
 
 # Historial de avance
