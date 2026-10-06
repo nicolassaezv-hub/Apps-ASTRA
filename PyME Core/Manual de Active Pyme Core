@@ -42,12 +42,30 @@ La etapa Gestion va sobre:
 
 Y la etapa Inteligencia se enfoca en:
 
-    Utilidad, predicciones por movimientos u acciones de empresa,adaptacion al mercado local y externo, ahorro, presupuesto y parametros para exportacion
+    Utilidad, predicciones por movimientos u acciones de empresa aplicados al estado actual, prediccionn por inventario lento,adaptacion al mercado local y externo, ahorro, presupuesto y parametros para exportacion
 
 
 # Investigacion 
 
-Actualmente las PyMES de Chile evidencian una falta en digitalizacion de las empresas, de acuerdo a observaciones hechas el 2024 por el Ministerio de Economia el 70% de las empresas estan en los dos niveles mas bajos de madurez digital, un 73% tiene data digital ingresada (https://www.tichile.cl/el-futuro-de-las-pymes/) y hay un 75% dentro del mundo digital pero sin participacion en competencia (https://anda.cl/chile-lidera-en-ia-en-latinoamerica-pero-el-75-de-sus-pymes-no-aprovecha-la-digitalizacion-para-competir/)
+Actualmente las PyMES de Chile evidencian una falta en digitalizacion de las empresas, de acuerdo a observaciones hechas el 2024 por el Ministerio de Economia el 70% de las empresas estan en los dos niveles mas bajos de madurez digital, un 73% tiene data digital ingresada
+ (https://www.tichile.cl/el-futuro-de-las-pymes/)
+
+Hay un 75% dentro del mundo digital pero sin participacion en competencia 
+(https://anda.cl/chile-lidera-en-ia-en-latinoamerica-pero-el-75-de-sus-pymes-no-aprovecha-la-digitalizacion-para-competir/)
+
+En Chile 54,2% de las microempresas son informales, osea no lleva un contador financiero o separador de costos
+Solo un 25.8% de microemprendedores conlleva capacitacion formal para la actividad economica que realiza
+(https://www.ine.gob.cl/sala-de-prensa/prensa/general/noticia/2025/12/10/en-chile-hay-cerca-de-2-millones-de-personas-microemprendedoras)
+
+Segun un estudio del 2025 hay 1.2 Millones de PyMes activas, MyPyME reporta que en 2025 se estimo que la actividad esta constatada por:
+|Tipo PyME|Cifra|
+|--|--|
+|Microempresas| 905326
+|Pequeñas empresas| 251515
+|Mediana Empresas| 37279
+
+
+
 
 # Detales a incluir
 
@@ -59,6 +77,7 @@ Un metodo para entregarle al usuario una marca de dias de trabajo y horarios per
 - Oportunidad de Exportacion:
 Bajo la condicion de completarse las 3 etapas se abre una seccion extra para aquellos usuarios que quieran verificar y dar veracidad decisiva sobre la exportacion de sus productos. Permite seleccionar los productos y exponerlos en un mapa interactivo dando indices de puntos criticos de venta (bajo la vision de mercado regional/nacional). En el caso de ser internacional se debera primero filtrar manualmente los productos o elegir por casilla todos y luego se debe seleccionar el pais para luego entrar a una fase de evaluacion e investigacion intensiva.
 
+-Integracion web
 # Parametros a incluir en la APP (SaaS)
 
 La base conceptual es:
