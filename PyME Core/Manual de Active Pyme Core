@@ -69,22 +69,20 @@ Hay un 75% de PyMES dentro del mundo digital, registrado o usando un espacio onl
 - (https://anda.cl/chile-lidera-en-ia-en-latinoamerica-pero-el-75-de-sus-pymes-no-aprovecha-la-digitalizacion-para-competir/)
 
 
-
-
-
-
-
 # Detales a incluir
 
 Hay detalles que discutir sobre el prototipo, mucho sobre las preferencias del usuario tambien recabe en que esta no sea una "app de un uso mensual" sino que tambien integran las siguientes modalidades:
 
-+ Calendarizacion
++ Calendarizacion:
 Un metodo para entregarle al usuario una marca de dias de trabajo y horarios personalizados + un sistema proactivo, al final de cada jornada la app enviara una notificacion para ingresar la data del dia. Basicamente facilitar la registracion tipica de Excel u otros metodos a un registro sencillo hecha por aquellos usuarios, estos seran enviadas a la administracion/jefe en administracion para recabar los datos y confirmar el ingreso automatizado.
 
 - Oportunidad de Exportacion:
 Bajo la condicion de completarse las 3 etapas se abre una seccion extra para aquellos usuarios que quieran verificar y dar veracidad decisiva sobre la exportacion de sus productos. Permite seleccionar los productos y exponerlos en un mapa interactivo dando indices de puntos criticos de venta (bajo la vision de mercado regional/nacional). En el caso de ser internacional se debera primero filtrar manualmente los productos o elegir por casilla todos y luego se debe seleccionar el pais para luego entrar a una fase de evaluacion e investigacion intensiva.
 
--Integracion web
++ Integracion web:
+El portal web de PyME Core es la primera opcion SaaS de ejecucion, Estructuralmente es una superficie con interfaz propia. En la primera interaccion del jefe de empresa se debe asignar un correo administrativo y un telefono de confirmacion para resguardar el acceso administrativo.
+
+
 # Parametros a incluir en la APP (SaaS)
 
 La base conceptual es:
