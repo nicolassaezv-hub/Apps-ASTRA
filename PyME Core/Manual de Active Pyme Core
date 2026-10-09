@@ -5,20 +5,21 @@
 El PyME Core representa una herramienta hecha para PyMEs con tal de compilar, analizar y evaluar decisiones de mercado en base a sus propios datos y a los del mercado de interes
 
 Esta implementacion en su formato original propone bajo una seguida de pasos los siguientes objetivos:
-- Entrada de Datos:
+## Entrada de Datos:
      
+En formato CSV o por menu de usuario hecho con codigo Python. 
+Comprende toda la fuente de presupuesto, produccion e ingreso.
 
-      En formato CSV o por menu de usuario hecho con codigo Python. 
-      Comprende toda la fuente de presupuesto, produccion e ingreso.
+**Para casos sin encriptacion de datos; hara automaticamente para brindar seguridad en la clientela**
 
-**Para casos sin encriptacion de datos
--SHA-256
--CIFRADOS DE datos
-se hara automaticamente para brindar seguridad en la clientela**
+   - SHA-256
+   - Cifrado asimetrico
+   - 2FA
 
-- Ajustes Graficos: 
 
-        Se generan las graficas correspondientes, variables tipicas, no atipicas,financieras,listado de productos de mayor demanda y el estado economico actual sin necesidad de contexto
+## Ajustes Graficos: 
+
+Se generan las graficas correspondientes, variables tipicas, no atipicas,financieras,listado de productos de mayor demanda y el estado economico actual sin necesidad de contexto
 
 - Evaluacion en Contexto e informe de calidad y puntos criticos
         
@@ -29,6 +30,8 @@ se hara automaticamente para brindar seguridad en la clientela**
         - LATAM
 
       Considerando la eficiencia actual, representando por tablas y un informe con puntuacion que delimita con referencias a la data entregada aquellas falencias, mejoras en gestion y administracion de su empresa. En aquel informe se añade el margen correspondiente, los principios y una tabla de puntuacion para evaluar
+
+## Vista General
 
 Prioriza tres estados Operacion, Gestion e Inteligencia. En termino mas simples
 
@@ -44,6 +47,15 @@ Y la etapa Inteligencia se enfoca en:
 
     Utilidad, predicciones por movimientos u acciones de empresa aplicados al estado actual, prediccionn por inventario lento,adaptacion al mercado local y externo, ahorro, presupuesto y parametros para exportacion
 
+## Administracion de Responsabilidades Empresariales
+
+Esta seccion instituye un orden jerarquico para toda PyME, ya sea micro,pequeña o mediana empresa. Este ajuste se basa en las gestiones tipicas, constando de la asignacion principal e obligatoria de:
+
+- Jefe de Empresa/Dueño
+-
+-
+-
+-
 
 # Investigacion 
 
@@ -74,13 +86,16 @@ Hay un 75% de PyMES dentro del mundo digital, registrado o usando un espacio onl
 Hay detalles que discutir sobre el prototipo, mucho sobre las preferencias del usuario tambien recabe en que esta no sea una "app de un uso mensual" sino que tambien integran las siguientes modalidades:
 
 + Calendarizacion:
-Un metodo para entregarle al usuario una marca de dias de trabajo y horarios personalizados + un sistema proactivo, al final de cada jornada la app enviara una notificacion para ingresar la data del dia. Basicamente facilitar la registracion tipica de Excel u otros metodos a un registro sencillo hecha por aquellos usuarios, estos seran enviadas a la administracion/jefe en administracion para recabar los datos y confirmar el ingreso automatizado.
+
+    Un metodo para entregarle al usuario una marca de dias de trabajo y horarios personalizados + un sistema proactivo, al final de cada jornada la app enviara una notificacion para ingresar la data del dia. Basicamente facilitar la registracion tipica de Excel u otros metodos a un registro sencillo hecha por aquellos usuarios, estos seran enviadas a la administracion/jefe en administracion para recabar los datos y confirmar el ingreso automatizado.
 
 - Oportunidad de Exportacion:
-Bajo la condicion de completarse las 3 etapas se abre una seccion extra para aquellos usuarios que quieran verificar y dar veracidad decisiva sobre la exportacion de sus productos. Permite seleccionar los productos y exponerlos en un mapa interactivo dando indices de puntos criticos de venta (bajo la vision de mercado regional/nacional). En el caso de ser internacional se debera primero filtrar manualmente los productos o elegir por casilla todos y luego se debe seleccionar el pais para luego entrar a una fase de evaluacion e investigacion intensiva.
+
+    Bajo la condicion de completarse las 3 etapas se abre una seccion extra para aquellos usuarios que quieran verificar y dar veracidad decisiva sobre la exportacion de sus productos. Permite seleccionar los productos y exponerlos en un mapa interactivo dando indices de puntos criticos de venta (bajo la vision de mercado regional/nacional). En el caso de ser internacional se debera primero filtrar manualmente los productos o elegir por casilla todos y luego se debe seleccionar el pais para luego entrar a una fase de evaluacion e investigacion intensiva.
 
 + Integracion web:
-El portal web de PyME Core es la primera opcion SaaS de ejecucion, Estructuralmente es una superficie con interfaz propia. En la primera interaccion del jefe de empresa se debe asignar un correo administrativo y un telefono de confirmacion para resguardar el acceso administrativo.
+
+    El portal web de PyME Core es la primera opcion SaaS de ejecucion, Estructuralmente es una superficie con interfaz propia. En la primera interaccion del jefe de empresa se debe asignar un correo administrativo y un telefono de confirmacion para resguardar el acceso administrativo.
 
 
 # Parametros a incluir en la APP (SaaS)
@@ -127,6 +142,16 @@ Al final de este display se dara un boton de Evaluacion Diagnostica (Regional, N
 Explican condiciones, una casilla para cada seccion y una casilla en Negrita destacada para explicar el uso de datos bajo un contexto externo (para mercado nacional e internacional) señalando con un pequeño display de Condiciones de Uso estadistico para generar predicciones y un boton final para la Evaluacion Diagnostica de las selecciones del usuario
 
 Esto abre paso a la tercera seccion desplegable del Dashboard de Evaluacion diagnostica. En esta se referencia la situacion de la PyME contrastado dentro de los mercados seleccionados, ofreciendo contextualmente graficos comparativos
+
+Comparando el promedio diario con:
+
+-Empresa ejemplar segun mercado nacional (Max 5)
+
+-Empresa ejemplar segun mercado global (Max 3)
+
+-Potencial competitivo en competencia horizontal
+
+(**Aplicable a contexto local y nacional por ahora**)
 
 
 # Historial de avance
