@@ -51,7 +51,7 @@ Y la etapa Inteligencia se enfoca en:
 
 ## Administracion de Responsabilidades Empresariales
 
-Esta seccion instituye un orden jerarquico para toda PyME, ya sea micro,pequeña o mediana empresa. Este ajuste se basa en las gestiones tipicas, constando de la asignacion principal e obligatoria de roles tipicos (que son roles tipicos en todo tipo de PyME) y atipicos (roles especificos):
+Esta sección contempla las funciones empresariales típicas y especializadas de micro, pequeñas y medianas empresas. Para organizar el acceso al SaaS, PyME Core distinguirá **las funciones/cargos laborales** de **los roles jerárquicos de autorización**. Las plantillas serán flexibles: no se exige crear una cuenta diferente para cada función típica, y una misma persona podrá desempeñar varias funciones cuando corresponda.
 
 
 Roles Tipicos:
@@ -76,7 +76,103 @@ Roles Atipicos:
 
 Cada uno establece prioridades y/o capacidades en administracion.
 
-El Jefe/Dueño de empresa DEBE asignar roles en la primera interaccion con la seccion de Trabajo Activo en el dashboard
+En la primera interacción con **Trabajo Activo**, el **Jefe/Dueño (Owner)** debe configurar la estructura de responsabilidades de su empresa, elegir una plantilla inicial y realizar personalmente las asignaciones de roles jerárquicos y permisos. Las funciones típicas pueden ser cubiertas por una misma persona o marcarse como no aplicables al giro de la empresa; no se exige contratar personal ni crear usuarios ficticios para completar la configuración.
+
+
+### Jerarquía de acceso a PyME Core — decisiones confirmadas
+
+**Estado:** acuerdos funcionales confirmados para la especificación del SaaS y su futuro Build Brief de Base44 (11-10-2026). No constituyen todavía una implementación en Base44 ni en ASTRA.
+
+PyME Core será un SaaS multiempresa con portal web. Se separan tres conceptos:
+
+- **Rol jerárquico (autoridad en PyME Core):** define las facultades máximas de la cuenta dentro de la empresa.
+- **Función o cargo empresarial:** indica las responsabilidades laborales, como ventas, administración/finanzas, operaciones, inventario o contabilidad; por sí sola **no concede permisos de acceso**.
+- **Permisos funcionales y ámbito:** especifican qué acciones se permiten en qué módulos y sobre qué subconjunto de datos de la empresa.
+
+| Rol jerárquico | Responsabilidad en el SaaS | Límites principales |
+| --- | --- | --- |
+| **Owner / Jefe de empresa** | Autoridad máxima; único autorizado para asignar, cambiar y revocar roles y permisos; segunda aprobación obligatoria para consolidar lotes. | No puede omitir el flujo secuencial de doble confirmación; la excepción unipersonal conserva ambos pasos y audita que fueron realizados por la misma persona. |
+| **Administrador** | Primera aprobación obligatoria; supervisión administrativa de operaciones dentro de su ámbito; revisión directa cuando no existe moderador. | No asigna ni modifica roles o permisos de otros usuarios. No puede sustituir la aprobación del Owner. |
+| **Moderador** | Verifica registros y gestiona observaciones de su área/equipo autorizado, cuando este rol exista en la empresa. | No consolida ni aprueba en nombre del Administrador o del Owner. |
+| **Empleado** | Registra datos y ejecuta tareas operativas únicamente en módulos y ámbitos autorizados. | No verifica ni aprueba en nombre de cargos superiores. |
+
+#### Acuerdos de autoridad y aprobación (canon confirmado)
+
+| Código | Decisión confirmada | Regla |
+| --- | --- | --- |
+| **PC-ADM-001** | Autoridad exclusiva del Owner | Solo el Owner asigna, cambia o revoca roles jerárquicos. |
+| **PC-ADM-002** | Doble aprobación obligatoria | Para consolidar operaciones empresariales cubiertas por el flujo, se requiere aprobación de **un Administrador autorizado** y luego del **Owner**. |
+| **PC-ADM-003** | Plantillas organizacionales flexibles | La estructura inicial se adapta a micro, pequeñas y medianas empresas, sin exigir cuentas separadas por cada función laboral. |
+| **PC-ADM-004** | Excepción unipersonal | Una microempresa de una sola persona puede realizar las confirmaciones de Administrador y Owner desde la misma cuenta, en pasos separados, registrando que **no hubo revisión independiente**. |
+| **PC-ADM-005** | Aprobación agrupada | Se aprueban **cierres diarios o lotes de registros**; las incidencias y operaciones sensibles se revisan individualmente antes de su incorporación. |
+| **PC-ADM-006** | Orden secuencial | Primero aprueba el Administrador; posteriormente aprueba el Owner. No se invierte el orden. |
+| **PC-ADM-007** | Varios administradores | Cuando haya varios, basta la aprobación de **un Administrador autorizado para el ámbito del lote** y la del Owner; no se requiere la aprobación de todos los administradores. |
+| **PC-PER-001** | Permisos otorgados por el Owner | Exclusivamente el Owner puede conceder, modificar o revocar permisos funcionales específicos, además de los roles jerárquicos. |
+| **PC-PER-002** | Permisos por módulo y ámbito | El acceso se configura por acción, módulo y ámbito; el cargo laboral no concede permisos automáticamente. |
+| **PC-PER-003** | Empresa sin moderador | Si no existe Moderador, el Administrador realiza la revisión previa de los registros y mantiene después su aprobación de Administrador; sigue siendo indispensable la aprobación posterior del Owner. |
+
+#### Flujo acordado para cierres diarios y lotes
+
+```text
+Registro por empleado autorizado
+          ↓
+Envío de cierre diario / lote
+          ↓
+Verificación por Moderador (si lo hay)
+  o revisión por Administrador (si no lo hay)
+          ↓
+Aprobación por un Administrador autorizado
+          ↓
+Aprobación posterior por Owner
+          ↓
+Consolidación en base de datos oficial
+          ↓
+Historial / trazabilidad / análisis ASTRA
+```
+
+- La doble aprobación aplica a **lotes o cierres**, no implica aprobar manualmente cada venta o movimiento cotidiano por separado.
+- Las **incidencias** y las **operaciones sensibles** exigen revisión individual. Queda pendiente especificar sus categorías y umbrales.
+- Un lote debe conservar su **identidad, contenido y versión** durante las aprobaciones. Como requisito de integridad propuesto para implementación, si se cambia el contenido aprobado, las aprobaciones anteriores deberán invalidarse y repetirse.
+- Para la **excepción unipersonal**, las dos acciones deben quedar diferenciadas en el historial, aunque las ejecute la misma identidad. El sistema no debe presentarlas como verificaciones independientes.
+- La información solo pasa a ser **oficial para la consolidación y el análisis ASTRA** después de ambas confirmaciones. Los borradores y registros pendientes deben distinguirse claramente de los oficiales.
+
+#### Plantillas por tamaño empresarial
+
+| Elemento | Microempresa | Pequeña empresa | Mediana empresa |
+| --- | --- | --- | --- |
+| Owner | Requerido | Requerido | Requerido |
+| Administrador | Puede ser la misma persona que el Owner **solo en microempresa unipersonal**; de lo contrario, persona autorizada distinta | Función diferenciada | Función diferenciada; pueden existir varios administradores |
+| Moderador | Opcional | Opcional, recomendable por equipo/área | Opcional, recomendable por departamento o sucursal |
+| Empleados | Según operación real | Según operación real | Según operación real |
+| Funciones laborales | Se pueden acumular en una persona | Se pueden combinar | Se pueden distribuir por áreas |
+| Flujo de aprobación | Administrador → Owner, con excepción unipersonal auditada | Administrador → Owner | Administrador autorizado → Owner |
+
+Estas plantillas **no fijan número de trabajadores ni permisos automáticamente**; son puntos de partida que el Owner puede adaptar. Si se omite el Moderador, se aplica **PC-PER-003**.
+
+#### Modelo de permisos funcionales — principios ya acordados
+
+Cada autorización debe distinguir, como mínimo:
+
+1. **Empresa:** cuenta/membresía empresarial a la que pertenece la autorización.
+2. **Módulo:** ventas, inventario, compras, finanzas, clientes, producción, inteligencia u otros módulos aplicables.
+3. **Acción:** por ejemplo, ver, registrar, editar, enviar, verificar, exportar; la capacidad de aprobar como Administrador u Owner está sujeta al rol jerárquico y al flujo acordado.
+4. **Ámbito:** registros propios, equipo, departamento/área, sucursal o empresa completa, según lo que exista en la organización.
+
+**Salvaguardas técnicas recomendadas para implementación:** los permisos deben tener límites compatibles con la jerarquía; una función laboral nunca eleva privilegios por sí sola; y las comprobaciones de acceso deben ejecutarse en los servicios/backend y no solo mediante la visibilidad de botones. Las consultas de ASTRA tampoco deben permitir saltarse los permisos sobre la información empresarial.
+
+#### Definiciones pendientes antes del Build Brief de Base44
+
+Los siguientes puntos **no están aprobados aún** y se cerrarán en el **Catálogo definitivo de permisos por módulo** y las siguientes etapas de diseño:
+
+- Listado exhaustivo de acciones y permisos por módulo, incluidos datos financieros sensibles, exportación de registros e inteligencia ASTRA.
+- Valores iniciales de permisos para cada rol y función laboral, con sus límites de ámbito.
+- Determinación de operaciones sensibles, incidencias, umbrales y política de revisión individual.
+- Alcance de la doble aprobación fuera de los cierres/lotes (por ejemplo, cambios de configuración y rectificaciones históricas).
+- Manejo de observaciones, rechazo, anulaciones y corrección de registros ya consolidados.
+- Ausencias, sustitución y recuperación de acceso del Owner o del Administrador sin desactivar los controles confirmados.
+- Creación/invitación de usuarios, pertenencia a varias empresas y eventual estructura de sucursales.
+- Aplicación técnica de autenticación reforzada, auditoría y controles multiempresa en Base44 y ASTRA.
+
 
 
 # Investigacion 
@@ -173,4 +269,6 @@ Comparando el promedio diario con:
 
 
 # Historial de avance
+
+- **11-10-2026 — Jerarquía y permisos:** incorporadas 10 decisiones confirmadas (PC-ADM-001 a PC-ADM-007 y PC-PER-001 a PC-PER-003); se establecen la doble aprobación por lotes, excepción unipersonal auditada, plantillas flexibles y pendientes de la matriz por módulo.
 
