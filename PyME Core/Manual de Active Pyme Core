@@ -4,11 +4,13 @@
 
 El PyME Core representa una herramienta hecha para PyMEs con tal de compilar, analizar y evaluar decisiones de mercado en base a sus propios datos y a los del mercado de interes
 
-Esta implementacion en su formato original propone bajo una seguida de pasos los siguientes objetivos:
+Esta implementacion en su formato original propone bajo una seguida de pasos los siguientes objetivos
+
 ## Entrada de Datos:
      
 En formato CSV o por menu de usuario hecho con codigo Python. 
 Comprende toda la fuente de presupuesto, produccion e ingreso.
+
 
 **Para casos sin encriptacion de datos; hara automaticamente para brindar seguridad en la clientela**
 
@@ -21,7 +23,7 @@ Comprende toda la fuente de presupuesto, produccion e ingreso.
 
 Se generan las graficas correspondientes, variables tipicas, no atipicas,financieras,listado de productos de mayor demanda y el estado economico actual sin necesidad de contexto
 
-- Evaluacion en Contexto e informe de calidad y puntos criticos
+### Evaluacion en Contexto e informe de calidad y puntos criticos
         
       Apartir de una base estadistica actualizada se crea una comparacion con el mercado. El mercado siendo bajo el contexto de inversion y produccion en el area:
 
@@ -49,16 +51,28 @@ Y la etapa Inteligencia se enfoca en:
 
 ## Administracion de Responsabilidades Empresariales
 
-Esta seccion instituye un orden jerarquico para toda PyME, ya sea micro,pequeña o mediana empresa. Este ajuste se basa en las gestiones tipicas, constando de la asignacion principal e obligatoria de:
+Esta seccion instituye un orden jerarquico para toda PyME, ya sea micro,pequeña o mediana empresa. Este ajuste se basa en las gestiones tipicas, constando de la asignacion principal e obligatoria de roles tipicos (que son roles tipicos en todo tipo de PyME) y atipicos (roles especificos):
 
+
+Roles Tipicos:
 - Jefe de Empresa/Dueño
--
--
--
--
+- Administracion/Finanzas
+- Operaciones
+- Ejecutor de Ventas
+- Trabajador Regular
+
+Roles Atipicos:
+- Supervisor/es
+- Recursos Humanos (RR.HH)
+- Ejecutor de compras
+- Administrador/Supervisor de inventario
+
+Cada uno establece prioridades y/o capacidades en administracion.
+
+El Jefe/Dueño de empresa DEBE asignar roles en la primera interaccion con la seccion de Trabajo Activo en el dashboard
+
 
 # Investigacion 
-
 
 ## Info 2024
 MiPymes reporta que un estudio del 2024 determino que hay aprox 1.2 Millones de PyMes se estimo que un 53% de estos fueron de exportacion y brindaron mas de 70000 empleos formales 
@@ -76,10 +90,8 @@ Solo un 25.8% de microemprendedores conlleva capacitacion formal para la activid
 46% de las pymes carece de un plan de ciberseguridad: Este dato surge del reporte regional SME Cybersecurity Outlook desarrollado por la multinacional financiera Mastercard. El estudio encuestó a más de 2.400 ejecutivos y dueños de pequeñas y medianas empresas en América Latina y el Caribe, identificando esta brecha de seguridad crítica en el ecosistema comercial chileno
 - (https://www.trendtic.cl/2026/09/reciente-estudio-revela-que-el-46-de-las-pymes-encuestadas-en-chile-aun-no-cuenta-con-un-plan-de-ciberseguridad/)
 
-
 Hay un 75% de PyMES dentro del mundo digital, registrado o usando un espacio online pero sin participacion en competencia 
 - (https://anda.cl/chile-lidera-en-ia-en-latinoamerica-pero-el-75-de-sus-pymes-no-aprovecha-la-digitalizacion-para-competir/)
-
 
 # Detales a incluir
 
@@ -96,7 +108,6 @@ Hay detalles que discutir sobre el prototipo, mucho sobre las preferencias del u
 + Integracion web:
 
     El portal web de PyME Core es la primera opcion SaaS de ejecucion, Estructuralmente es una superficie con interfaz propia. En la primera interaccion del jefe de empresa se debe asignar un correo administrativo y un telefono de confirmacion para resguardar el acceso administrativo.
-
 
 # Parametros a incluir en la APP (SaaS)
 
@@ -156,4 +167,3 @@ Comparando el promedio diario con:
 
 # Historial de avance
 
-g
