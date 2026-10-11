@@ -55,17 +55,24 @@ Esta seccion instituye un orden jerarquico para toda PyME, ya sea micro,pequeña
 
 
 Roles Tipicos:
-- Jefe de Empresa/Dueño
 - Administracion/Finanzas
-- Operaciones
 - Ejecutor de Ventas
+- Jefe de Empresa/Dueño
+- Operaciones
 - Trabajador Regular
 
 Roles Atipicos:
-- Supervisor/es
-- Recursos Humanos (RR.HH)
-- Ejecutor de compras
 - Administrador/Supervisor de inventario
+- Contador
+- Ejecutor de compras
+- Encargado de compliance
+- Encargado de Marketing/RR.SS
+- Encargado de Sucursal
+- Encargado de Tecnologia de Informacion (TI)
+- Logistica/Despacho
+- Recursos Humanos (RR.HH)
+- Supervisor/es
+
 
 Cada uno establece prioridades y/o capacidades en administracion.
 
